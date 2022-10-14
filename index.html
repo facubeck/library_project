@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header><h1>Library</h1></header>
+
+    <main class="main">
+        <div id='newBtn-Container'>
+            <button id='newBtn' class="btn">+ New Book</button>
+        </div>
+        <div id='Library-container' class="library"></div>
+    </main>
+    
+
+    <div id="modal"  class="modal">
+        <form id='form' action='app.js'>
+            <span class="close">&times;</span>
+            <legend>New Book</legend>
+            <div id='textInput'> 
+                <p><input type='text' id='title' name='title' placeholder='Title *' required maxlength="70"></p>
+                <p><input type='text' id='author' name='author' placeholder='Author *' required></p>
+                <p><input type='number' id='pages' name='pages' placeholder='Pages *' required min="0" max="1500"></p>
+            </div>
+            <div id='checkBox'>
+                <p><label >Have you read it?</label><input type='checkbox' id='read' name='read' value='yes'></p>
+            </div>
+            <button type='submit' form='form' id='addBtn' class="btn">Add</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- <main class="main">
+        <button class="btn" id="newBookBtn">+ New Book</button>
+        <div class="booksGrid" id="booksGrid"></div>
+    </main>
+
+    <div class="modal" id="addBookModal">
+        <form action="" id="addBookForm" class="form">
+            <h3>Add New Book</h3>
+            <input type="text" placeholder="Title" maxlength="50" min="0" required id="title">
+            <input type="text" placeholder="Author" maxlength="50" min="0" required id="author">
+            <input type="number" placeholder="Number of Pages" min="0" max="1000" required id="pages">
+            <div class="is-read">
+                <label for="is-read">Did you read it?</label>
+                <input type="checkbox" id="isRead">
+            </div>
+            <button class="btn btn-contrast" id="addBookBtn" type="button">Add</button>
+        </form>
+    </div>
+
+    <div class="overlay" id="overlay"></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
